@@ -1,3 +1,4 @@
 # eluney.encuadernacion
 Eluney - Emprendimiento de Encuadernación y Diseño Gráfico Digital
-https://github.com/MeliVillegas/eluney.encuadernacion.git
+https://melivillegas.github.io/eluney.encuadernacion/
+
