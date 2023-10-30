@@ -2,9 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Estilos generales del navbar */
 nav {
-    background-color: #fff; /* Fondo del navbar */
+    background-color: #fff; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +12,7 @@ nav {
 }
 
 .logo img {
-    max-width: 100px; /* Tamaño máximo del logo */
+    max-width: 100px;
 }
 
 .menu {
@@ -29,49 +28,80 @@ nav {
 
 .menu a {
     text-decoration: none;
-    color: #000; /* Color de texto enlaces no activos */
+    color: #000; 
 }
 
 .menu a.active {
     font-weight:600;
-    color: #b77b70; /* Color de texto del enlace activo rgb(183, 0, 255)*/
+    color: #b77b70; 
 }
 
-/* Estilos para el menú en dispositivos móviles */
-.menu-icon {
-    display: none;
+.menu-toggle {
     font-size: 30px;
-    color: #fff;
     cursor: pointer;
 }
 
-/* Media query para mostrar el ícono de menú en pantallas más angostas */
+.menu-toggle img{
+    display: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; 
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+}
+
 @media screen and (max-width: 768px) {
     .menu {
         display: none;
+        flex-direction: column;
+        background-color: #fff; 
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 20px 0;
     }
 
-    .menu-icon {
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu-toggle img{
         display: block;
     }
 }
 
-/* Estilos generales para la portada */
+
 .portada {
     width: 100%;
-    height: 100vh; /* Esto hace que la portada ocupe toda la pantalla */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/portada4.png"); /* Ruta de tu imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir la portada */
+    background-image: url("../img/portada4.png"); 
+    background-size: cover; 
     background-position: center;
 }
 
-/* Estilos para el contenido en el centro */
+
 .contenido {
     text-align: center;
-    color: #000; /* Color de texto en el contenido */
+    color: #000; 
 }
 
 .contenido h1 {
@@ -79,7 +109,7 @@ nav {
 }
 
 .contenido img {
-    max-width: 100%; /* Ajusta el tamaño máximo de la imagen en el centro */
+    max-width: 100%; 
 }
 
 .contenido p {
@@ -88,27 +118,27 @@ nav {
     max-width: 600px;
 }
 
-/* Estilos del botón */
+
 .boton {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #b77b70; /* Color de fondo del botón: #b77b70*/
-    color: #fff; /* Color de texto del botón */
+    background-color: #b77b70; 
+    color: #fff; 
     text-decoration: none;
     border-radius: 30px;
     margin-top: 20px;
 }
 
-/* Estilos para el footer */
+
 footer {
-    background-color: #fff; /* Fondo del footer */
-    color: #000; /* Color del texto en el footer */
+    background-color: #fff; 
+    color: #000; 
     text-align: center;
     padding: 20px;
     border-top: #000 1px solid;
 }
 
-/* Estilos para los íconos de redes sociales */
+
 .redes-sociales a {
     display: inline-block;
     margin: 0 10px;
@@ -116,17 +146,17 @@ footer {
 }
 
 .redes-sociales img {
-    width: 30px; /* Tamaño de los íconos de redes sociales */
+    width: 30px; 
     height: 30px;
 }
 
-/* Estilos para los derechos de autor */
+
 p {
     font-size: 14px;
     margin-top: 10px;
 }
 
-/* Media query para ajustar el contenido en pantallas más pequeñas */
+
 @media screen and (max-width: 768px) {
     .contenido h1 {
         font-size: 28px;
@@ -138,20 +168,20 @@ p {
 
 .whatsapp-button {
     position: fixed;
-    bottom: 20px; /* Ajusta la posición vertical */
-    right: 20px; /* Ajusta la posición horizontal */
-    z-index: 1000; /* Asegura que esté en la parte superior de otros elementos */
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
 }
 
 .whatsapp-button a {
     display: block;
-    background-color: #01E675; /* Color de fondo de WhatsApp */
+    background-color: #01E675; 
     padding: 10px;
     border-radius: 50%;
 }
 
 .whatsapp-button img {
-    width: 40px; /* Ajusta el tamaño del icono de WhatsApp */
+    width: 40px;
     height: 40px;
     display: block;
 }
